@@ -2,7 +2,7 @@
   "name": "nano-banana",
   "displayName": "Nano Banana",
   "description": "Generate and edit images with Google Gemini Nano Banana 2.1 (Interactions API): reference images, multi-turn edits, 1K/2K/4K, 14 aspect ratios, thinking levels, Google search grounding and variations.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "kfirfer",
     "url": "https://github.com/kfirfer"
