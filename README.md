@@ -6,20 +6,20 @@ A [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugins/overv
 
 ```bash
 claude plugin marketplace add kfirfer/claude-plugins
-claude plugin install nano-banana-studio@kfirfer
+claude plugin install nano-banana@kfirfer
 ```
 
-Or inside a Claude Code session: `/plugin marketplace add kfirfer/claude-plugins`, then `/plugin install nano-banana-studio@kfirfer`.
+Or inside a Claude Code session: `/plugin marketplace add kfirfer/claude-plugins`, then `/plugin install nano-banana@kfirfer`.
 
-Updates: `claude plugin update nano-banana-studio@kfirfer`, or turn on auto-update for the `kfirfer` marketplace in `/plugin` → Marketplaces.
+Updates: `claude plugin update nano-banana@kfirfer`, or turn on auto-update for the `kfirfer` marketplace in `/plugin` → Marketplaces.
 
 ## Plugins
 
 | Plugin | What it does |
 |---|---|
-| [nano-banana-studio](plugins/nano-banana-studio) | Generate and edit images with Google Gemini Nano Banana 2.1 |
+| [nano-banana](plugins/nano-banana) | Generate and edit images with Google Gemini Nano Banana 2.1 |
 
-## Nano Banana Studio
+## Nano Banana
 
 Ask Claude for any image ("make a 16:9 hero image of…", "edit this photo so…") and the `nano-banana` skill writes a detailed prompt, calls Gemini Nano Banana 2.1 through the Interactions API, checks the result and refines it over several turns.
 

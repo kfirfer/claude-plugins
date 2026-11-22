@@ -1,13 +1,13 @@
 {
-  "name": "nano-banana-studio",
-  "displayName": "Nano Banana Studio",
+  "name": "nano-banana",
+  "displayName": "Nano Banana",
   "description": "Generate and edit images with Google Gemini Nano Banana 2.1 (Interactions API): reference images, multi-turn edits, 1K/2K/4K, 14 aspect ratios, thinking levels, Google search grounding and variations.",
   "version": "1.0.0",
   "author": {
     "name": "kfirfer",
     "url": "https://github.com/kfirfer"
   },
-  "homepage": "https://github.com/kfirfer/claude-plugins/tree/main/plugins/nano-banana-studio",
+  "homepage": "https://github.com/kfirfer/claude-plugins/tree/main/plugins/nano-banana",
   "repository": "https://github.com/kfirfer/claude-plugins",
   "license": "MIT",
   "keywords": ["image-generation", "gemini", "nano-banana", "image-editing"]
