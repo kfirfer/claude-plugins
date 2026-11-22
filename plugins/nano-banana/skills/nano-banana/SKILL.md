@@ -34,7 +34,7 @@ While the plugin is enabled, the same script is also on PATH as `nano-banana "pr
 | `--image-only` | Adds "output only one final image". Use it when a prompt returns no image. |
 | `-m` | Model: `pro` (gemini-3-pro-image: dense text, up to 3 style references), `nb2`, `lite`, or any model ID |
 
-Each run is logged to `<out>/nano_banana_log.jsonl` with tokens and estimated cost. The cost estimate does not include thinking tokens.
+Each run prints the saved path and an estimated cost; nothing else is logged. The cost estimate does not include thinking tokens.
 
 ## Workflow
 1. **Write the prompt** using the guide below. Turn the user's request into a descriptive paragraph rather than passing on a few keywords.

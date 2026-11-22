@@ -42,7 +42,7 @@ mkdir -p ~/.nano-banana && echo "GEMINI_API_KEY=your_key" > ~/.nano-banana/.env 
 - Multi-turn editing (`--continue`) without re-uploading the image.
 - Google web and image search grounding (`--search`).
 - Several variations at once (`-n`).
-- A per-run JSONL log with token counts and estimated cost.
+- An estimated cost printed after each image.
 
 ### Use it directly
 While the plugin is enabled, Claude can also run `nano-banana` as a shell command:

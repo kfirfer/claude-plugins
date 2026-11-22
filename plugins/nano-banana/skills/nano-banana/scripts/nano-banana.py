@@ -12,8 +12,8 @@ Examples:
   nano-banana "Wallpaper of a resplendent quetzal" --search -a 16:9 -s 4K -t high
 
 API key: GEMINI_API_KEY env var, else ~/.nano-banana/.env.
-Outputs go to ./out/ (override with -d or NANO_BANANA_OUT_DIR). Each run is logged to
-<out>/nano_banana_log.jsonl; the last interaction ID (for --continue) is kept in <out>/.nano_banana_last.json.
+Outputs go to ./out/ (override with -d or NANO_BANANA_OUT_DIR). The last interaction ID
+(for --continue) is kept in <out>/.nano_banana_last.json.
 """
 
 from __future__ import annotations
@@ -129,7 +129,6 @@ def main() -> None:
 
     out_dir = Path(args.dir).expanduser()
     state_file = out_dir / ".nano_banana_last.json"
-    log_file = out_dir / "nano_banana_log.jsonl"
 
     prev_id = args.prev
     if args.cont and not prev_id:
@@ -200,16 +199,6 @@ def main() -> None:
         print(f"interaction id: {it.id}   (edit it next with --continue)")
 
         state_file.write_text(json.dumps({"interaction_id": it.id, "file": str(path)}))
-        with log_file.open("a") as f:
-            f.write(json.dumps({
-                "time": datetime.now().isoformat(timespec="seconds"), "model": model,
-                "file": str(path), "interaction_id": it.id, "prev": prev_id,
-                "size": args.size, "aspect": args.aspect, "thinking": args.thinking,
-                "refs": args.ref, "search": args.search, "prompt": args.prompt,
-                "input_tokens": in_tok, "image_tokens": img_tok,
-                "thought_tokens": thought_tok, "est_cost_usd": round(cost, 5),
-                "seconds": round(elapsed, 1),
-            }) + "\n")
 
 
 if __name__ == "__main__":
