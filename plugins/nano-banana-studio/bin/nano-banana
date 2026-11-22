@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Puts `nano-banana` on the Bash tool's PATH while the plugin is enabled.
+set -euo pipefail
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec uv run --quiet --script "$here/../skills/nano-banana/scripts/nano-banana.py" "$@"

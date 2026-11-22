@@ -1,0 +1,18 @@
+{
+  "name": "kfirfer",
+  "owner": {
+    "name": "kfirfer"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by kfirfer"
+  },
+  "plugins": [
+    {
+      "name": "nano-banana-studio",
+      "source": "./plugins/nano-banana-studio",
+      "description": "Generate and edit images with Google Gemini Nano Banana 2.1: reference images, multi-turn edits, 1K-4K, 14 aspect ratios, search grounding.",
+      "category": "media",
+      "keywords": ["image-generation", "gemini", "nano-banana", "image-editing"]
+    }
+  ]
+}
